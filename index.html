@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LizDeLux Botanicals handmade soaps and developing botanical body-care range.">
+  <meta name="description" content="Discover South African handmade soaps from LizDeLux Botanicals. Explore small-batch botanical soaps and enquire in Ga-Sekhukhune or Pretoria.">
   <title>LizDeLux Botanicals | Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <!-- Shared website header and navigation -->
   <header class="site-header">
     <a class="logo" href="index.html"><b>LDL</b> LizDeLux <em>Botanicals</em></a>
     <nav aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
+      <a class="active" aria-current="page" href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="enquiry.html">Enquiry</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <!-- Homepage hero introduces the organisation and primary action -->
     <section class="hero">
       <div class="hero-copy">
@@ -28,7 +31,7 @@
         <p>Discover small-batch handmade soaps and the developing LizDeLux Botanicals body-care range.</p>
         <a class="button" href="products.html">Explore the collection</a>
       </div>
-      <img src="images/products/assorted-handmade-soaps-board.jpg" alt="Assorted green, amber and pink handmade soaps arranged on a wooden board" width="600">
+      <img src="images/products/assorted-handmade-soaps-board.jpg" alt="Assorted green, amber and pink handmade soaps arranged on a wooden board" fetchpriority="high" decoding="async" width="1200" height="800">
     </section>
     <section class="values" aria-label="Brand values">
       <span>Small-batch care</span><span>Original products</span><span>Made in South Africa</span><span>Thoughtful presentation</span>
@@ -38,6 +41,6 @@
       <div><p>Founded in 2025 as Made by Liz, the business is evolving into LizDeLux Botanicals: a broader handmade soap and botanical body-care brand created by Lizzy Maake.</p><a class="link" href="about.html">Read our story →</a></div>
     </section>
   </main>
-  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p></footer>
+  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p><p><a href="products.html">Browse soaps</a> · <a href="enquiry.html">Product enquiries</a> · <a href="contact.html">Contact us</a></p></footer>
 </body>
 </html>

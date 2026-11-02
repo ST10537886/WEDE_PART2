@@ -1,0 +1,3 @@
+# Source template only: build.cjs writes the live sitemap URL into dist/robots.txt.
+User-agent: *
+Allow: /

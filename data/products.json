@@ -1,0 +1,32 @@
+[
+  {
+    "id": "aloe-de-gen",
+    "name": "Aloe de Gen",
+    "description": "Green handmade botanical soap.",
+    "price": 35,
+    "image": "green-botanical-soaps-plate.jpg",
+    "alt": "Green oval and rectangular soaps decorated with dried botanicals on a white plate",
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "id": "shea-beaut",
+    "name": "Shea Beaut",
+    "description": "Pink handmade soap decorated with botanical material.",
+    "price": 35,
+    "image": "pink-botanical-soaps-board.jpg",
+    "alt": "Two pink oval soaps decorated with dried botanicals on a wooden board",
+    "width": 800,
+    "height": 1200
+  },
+  {
+    "id": "turma-power",
+    "name": "Turma Power",
+    "description": "Amber handmade soap with bee and honeycomb details.",
+    "price": 35,
+    "image": "amber-bee-soaps-closeup.jpg",
+    "alt": "Two amber oval soaps with bee and honeycomb mould details",
+    "width": 800,
+    "height": 1200
+  }
+]

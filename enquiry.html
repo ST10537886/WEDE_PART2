@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit a product or order enquiry to LizDeLux Botanicals.">
+  <meta name="description" content="Get a catalogue estimate for LizDeLux Botanicals handmade soaps. Enquire about quantities, upcoming products and availability in South Africa.">
   <title>Enquiry | LizDeLux Botanicals</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="logo" href="index.html"><b>LDL</b> LizDeLux <em>Botanicals</em></a>
-    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a class="active" href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a class="active" aria-current="page" href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
   </header>
-  <main>
+  <main id="main">
     <section class="contact enquiry-layout">
-      <div><p class="eyebrow">Product and order enquiries</p><h1>Tell us what<br><em>you’re looking for.</em></h1><p>Use this form to enquire about availability, quantities or upcoming LizDeLux Botanicals products.</p><img src="images/products/pink-honeycomb-soap-handheld.jpg" alt="Hand holding a bright pink oval handmade soap with a honeycomb and bee design" width="400"></div>
-      <!-- Enquiry form required by the Part 1 sitemap -->
-      <form action="#" method="post">
-        <label for="enquiry-name">Full name</label><input id="enquiry-name" type="text" name="name" required>
-        <label for="enquiry-phone">Telephone number</label><input id="enquiry-phone" type="tel" name="phone" required>
-        <label for="enquiry-type">Enquiry type</label><select id="enquiry-type" name="enquiry-type"><option value="availability">Product availability</option><option value="order">Order enquiry</option><option value="range">Upcoming product range</option></select>
+      <div><p class="eyebrow">Product and order enquiries</p><h1>Tell us what<br><em>you’re looking for.</em></h1><p>Use this form to enquire about availability, quantities or upcoming LizDeLux Botanicals products.</p><img src="images/products/pink-honeycomb-soap-handheld.jpg" alt="Hand holding a bright pink oval handmade soap with a honeycomb and bee design" loading="lazy" decoding="async" width="900" height="1200"></div>
+      
+      <form id="enquiry-form" action="/.netlify/functions/enquiry" method="post">
+<p>All fields are required unless marked optional.</p>
+        <label for="enquiry-name">Full name</label><input id="enquiry-name" type="text" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+        <label for="enquiry-phone">Telephone number</label><input id="enquiry-phone" type="tel" name="phone" autocomplete="tel" pattern="[+0-9 ()-]{10,20}" title="Use 10 to 20 characters: digits, spaces, brackets, plus or hyphen." required>
+        <label for="enquiry-email">Email address</label><input id="enquiry-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+<label for="enquiry-type">Enquiry type</label><select id="enquiry-type" name="enquiry-type"><option value="availability">Product availability</option><option value="order">Order enquiry</option><option value="range">Upcoming product range</option></select>
         <label for="enquiry-product">Product</label><select id="enquiry-product" name="product"><option value="aloe-de-gen">Aloe de Gen</option><option value="shea-beaut">Shea Beaut</option><option value="turma-power">Turma Power</option><option value="other">Other or upcoming product</option></select>
-        <label for="enquiry-quantity">Quantity</label><input id="enquiry-quantity" type="number" name="quantity" min="1" value="1">
-        <label for="enquiry-message">Message</label><textarea id="enquiry-message" name="message" rows="5" required></textarea>
-        <button class="button" type="submit">Submit enquiry</button>
-      </form>
+        <label for="enquiry-quantity">Quantity</label><input id="enquiry-quantity" type="number" name="quantity" min="1" max="100" step="1" value="1" required>
+        <label for="enquiry-message">Message</label><textarea id="enquiry-message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
+        <p class="form-note">Get a catalogue estimate. This does not place an order or send a message. Availability and delivery are confirmed separately.</p><button class="button" type="submit">Get my estimate</button>
+      <div id="enquiry-result" class="form-result" role="status" aria-live="polite" tabindex="-1"></div>
+<noscript><p>Enable JavaScript for the enquiry estimate. You can also phone 082 654 0809.</p></noscript>
+</form>
     </section>
   </main>
-  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p></footer>
+  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p><p><a href="products.html">Browse soaps</a> · <a href="enquiry.html">Product enquiries</a> · <a href="contact.html">Contact us</a></p></footer>
 </body>
 </html>
