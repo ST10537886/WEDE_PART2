@@ -4,11 +4,11 @@ South African handmade soap website by Lizzy Maake. This version builds on the s
 
 ## Current status
 
-Implementation draft, 2 November 2026. Student: Lizzy Maake (ST10537886). Module: WEDE5020. Repository: https://github.com/ST10537886/WEDE_PART2
+Published Part 3 version, 2 November 2026. Student: Lizzy Maake (ST10537886). Module: WEDE5020. Repository: https://github.com/ST10537886/WEDE_PART2
 
-The lecturer feedback has been reviewed. The screenshot gives positive overall feedback. The PDF selects technically correct referencing for consistency, congruency and the overall result. No specific website corrections or numerical website mark are shown. Desktop browser checks passed for catalogue loading, search, name sorting, modal open/Escape-close with focus restoration, empty-form errors, a three-soap R105 estimate, and contact draft preparation. Mobile and hosted checks remain open.
+The lecturer feedback has been reviewed. The screenshot gives positive overall feedback. The PDF selects technically correct referencing for consistency, congruency and the overall result. No specific website corrections or numerical website mark are shown. Desktop browser checks passed for catalogue loading, search, name sorting, modal open/Escape-close with focus restoration, empty-form errors, a three-soap R105 estimate, and contact draft preparation. The hosted enquiry calculation, public homepage, map tiles, live sitemap, robots file and homepage canonical URL were also verified. Mobile and email-app checks remain open.
 
-The Part 3 source is uploaded on branch `part3-functionality-seo` for review. The live website has not yet been deployed.
+Live website: **https://lizdelux-botanicals.netlify.app/**. Source branch: `part3-functionality-seo`. Review: https://github.com/ST10537886/WEDE_PART2/pull/1. Netlify deploys this branch automatically; the default branch still contains Part 2 until the review is merged.
 
 Contact recipient confirmed by the owner: **maakepebetsi@gmail.com**. Phone: 082 654 0809. Service areas: Ga-Sekhukhune and Pretoria. No street address, stock quantities, ingredient benefits or delivery prices have been invented.
 
@@ -94,6 +94,8 @@ After publication, request relevant links from authentic local business director
 - Reviewed the supplied Part 2 feedback: no specific corrective instruction was supplied. No deductions or numerical website mark have been invented.
 - Audited GitHub commit fc5fe40: root-level stylesheet and JPEG uploads did not match the HTML paths css/style.css and images/products/. Restored the expected directories in Part 3; existing root uploads remain in the repository.
 - Recorded student details and the GitHub repository URL.
+- Published the Part 3 branch on Netlify at https://lizdelux-botanicals.netlify.app/ with a public production site and private previews. Verified the hosted estimate and map rendering.
+- Matched canonical and sitemap URLs to Netlify's clean routes: /, /about, /products, /enquiry and /contact.
 
 ## Verification recorded
 
@@ -101,7 +103,7 @@ After publication, request relevant links from authentic local business director
 - Fifteen endpoint checks passed: valid price calculation, upcoming range, invalid JSON, null request, method restrictions, request size and invalid field/product/quantity cases.
 - Static checks on all five HTML pages passed: one H1 and description, unique IDs, image attributes and existing local asset/page links.
 - Deployment build succeeded with a sample validation domain. The sample build is excluded from the ZIP deliverable; rebuild with the real domain before publication.
-- Desktop browser preview subsequently connected successfully. Verified catalogue loading, filtering to one pink soap, name sorting, image modal display, Escape-close and focus restoration, form validation, R105 for three soaps in the static fallback, and the prepared email link addressed to the confirmed recipient. Leaflet initialized with zoom controls and attribution. Mobile layout, full map tile rendering, email-app launch and hosted AJAX still require checking. No test email was sent. No Lighthouse or search-ranking results are claimed.
+- Desktop browser preview subsequently connected successfully. Verified catalogue loading, filtering to one pink soap, name sorting, image modal display, Escape-close and focus restoration, form validation, R105 for three soaps in the static fallback, and the prepared email link addressed to the confirmed recipient. Leaflet initialized with zoom controls and attribution. The live server endpoint subsequently returned R105.00 for three Aloe de Gen soaps, and the map tiles and service regions rendered. Live robots.txt, five clean sitemap URLs and the homepage canonical were verified. Mobile layout and email-app launch still require checking. No test email was sent. No Lighthouse or search-ranking results are claimed.
 
 ## References
 
@@ -129,6 +131,6 @@ Numbered references follow an IEEE-style format. Accessed Nov. 2, 2026.
 
 - Student name / number: Lizzy Maake / ST10537886
 - GitHub repository: https://github.com/ST10537886/WEDE_PART2
-- Live website: pending
+- Live website: https://lizdelux-botanicals.netlify.app/
 - Part 2 feedback: reviewed; no specific website corrections requested
-- Browser validation: selected desktop interactions passed; mobile and hosted checks pending
+- Browser validation: desktop and selected live checks passed; mobile and email-app launch pending
