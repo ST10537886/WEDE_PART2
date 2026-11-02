@@ -3,25 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="View the current LizDeLux Botanicals handmade soap catalogue and planned collections.">
+  <meta name="description" content="Browse Aloe de Gen, Shea Beaut and Turma Power handmade soaps at R35 each. Search the LizDeLux Botanicals catalogue and enquire about availability.">
   <title>Products | LizDeLux Botanicals</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="logo" href="index.html"><b>LDL</b> LizDeLux <em>Botanicals</em></a>
-    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="products.html">Products</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" aria-current="page" href="products.html">Products</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
   </header>
-  <main>
+  <main id="main">
     <section class="page-hero"><p class="eyebrow">Current catalogue</p><h1>Handmade soaps,<br><em>with more to come.</em></h1><p>The original three-product catalogue is the starting point for the expanded LizDeLux Botanicals range.</p></section>
+    <section class="catalogue-controls" aria-label="Find a soap">
+      <div><label for="product-search">Search the collection</label><input id="product-search" type="search" placeholder="Try green, pink or honeycomb" maxlength="80"></div>
+      <div><label for="product-sort">Sort by</label><select id="product-sort"><option value="original">Collection order</option><option value="name">Name: A–Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div>
+      <p id="product-count" role="status">3 soaps in the collection</p>
+    </section>
     <!-- Current product names and prices are based on the owner-supplied catalogue -->
-    <section class="cards product-cards" aria-label="Current handmade soap catalogue">
-      <article><img src="images/products/green-botanical-soaps-plate.jpg" alt="Green oval and rectangular handmade soaps decorated with dried botanicals on a white plate" width="400"><div class="card-copy"><h2>Aloe de Gen</h2><p>Green handmade botanical soap.</p><strong>R35</strong></div></article>
-      <article><img src="images/products/pink-botanical-soaps-board.jpg" alt="Two bright pink oval handmade soaps decorated with dried botanicals on a wooden board" width="400"><div class="card-copy"><h2>Shea Beaut</h2><p>Pink handmade soap decorated with botanical material.</p><strong>R35</strong></div></article>
-      <article><img src="images/products/amber-bee-soaps-closeup.jpg" alt="Two amber oval handmade soaps with bee and honeycomb mould details" width="400"><div class="card-copy"><h2>Turma Power</h2><p>Amber handmade soap with bee and honeycomb details.</p><strong>R35</strong></div></article>
+    <section id="product-grid" class="cards product-cards" aria-label="Current handmade soap catalogue">
+      <article><img src="images/products/green-botanical-soaps-plate.jpg" alt="Green oval and rectangular handmade soaps decorated with dried botanicals on a white plate" loading="lazy" decoding="async" width="1200" height="800"><div class="card-copy"><h2>Aloe de Gen</h2><p>Green handmade botanical soap.</p><strong>R35</strong></div></article>
+      <article><img src="images/products/pink-botanical-soaps-board.jpg" alt="Two bright pink oval handmade soaps decorated with dried botanicals on a wooden board" loading="lazy" decoding="async" width="800" height="1200"><div class="card-copy"><h2>Shea Beaut</h2><p>Pink handmade soap decorated with botanical material.</p><strong>R35</strong></div></article>
+      <article><img src="images/products/amber-bee-soaps-closeup.jpg" alt="Two amber oval handmade soaps with bee and honeycomb mould details" loading="lazy" decoding="async" width="800" height="1200"><div class="card-copy"><h2>Turma Power</h2><p>Amber handmade soap with bee and honeycomb details.</p><strong>R35</strong></div></article>
     </section>
     <section class="planned content"><p class="eyebrow">Rebrand expansion</p><h2>Planned product categories</h2><ul><li>Additional handmade soap collections</li><li>Body butters</li><li>Body scrubs</li><li>Bath products</li></ul><p>Final ingredients, benefits and prices will be added only after the formulations and product records have been confirmed.</p><a class="button" href="enquiry.html">Make a product enquiry</a></section>
-  </main>
-  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p></footer>
+  <section class="content faq"><p class="eyebrow">A little more detail</p><h2>Your soap questions</h2>
+<details><summary>How do I check availability?</summary><p>Send a <a href="enquiry.html">product enquiry</a> or call 082 654 0809. Products are made in small batches, so stock must be confirmed.</p></details>
+<details><summary>Are more products coming?</summary><p>Body butters, scrubs and bath products are planned. Formulations, ingredients and prices will be shared once confirmed.</p></details>
+<details><summary>Where can I enquire about delivery?</summary><p>Contact us about your area. The business serves Ga-Sekhukhune and Pretoria; delivery costs and arrangements are confirmed separately.</p></details></section>
+<dialog id="lightbox" aria-labelledby="lightbox-caption"><button type="button" id="lightbox-close" class="button">Close image</button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+</main>
+  <footer><p><b>LizDeLux Botanicals</b> · Ga-Sekhukhune and Pretoria</p><p>Phone/WhatsApp: <a href="tel:+27826540809">082 654 0809</a> · © 2026</p><p><a href="products.html">Browse soaps</a> · <a href="enquiry.html">Product enquiries</a> · <a href="contact.html">Contact us</a></p></footer>
 </body>
 </html>
